@@ -1,0 +1,35 @@
+{
+  "name": "api-eletrotecnica-mauricio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "axts --watch src/main.ts -- --env-file .env",
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.36.4",
+    "express": "^5.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1",
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.10.1",
+    "axts": "^0.4.3",
+    "dotenv-cli": "^7.4.4",
+    "drizzle-kit": "^0.28.1",
+    "typescript": "^5.7.2"
+  },
+  "prisma": {
+    "schema": "src/prisma/schema.prisma"
+  }
+}
